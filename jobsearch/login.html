@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-repeat:no-repeat;
+    background-size: cover;                /* Cover entire section */
+    background-position: center;   
+    font-size: medium;
+    text-align:center;
+
+}@media(max-length:600px){
+    body{
+        font-size:medium;
+    }   
+}
+h1{
+    background-color:orange;
+}
+ .container{
+    margin-top:50px;
+    text-align:center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.head{
+width:80%;
+padding-left:30px;
+padding-right:40px; 
+}
+.regform{
+    margin:auto;
+    width:60%;
+    text-align:center;
+    padding-left:20px;
+    padding-top:20px;
+    display:block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    }
+button{
+    box-sizing: border-box;
+    width: 200px;
+    height:30px;
+    border:solid;
+    border-style:hidden;
+    position:relative;
+    align-items:center;
+}
+input{
+    width:200px;
+    height:30px;
+    backdrop-filter: blur(10px);
+}
+select{
+    width:200px;
+    height:40px;
+}
+footer{
+display:flex;
+justify-content:center;
+width:90%;
+padding:20px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>job search</h1>
+    <div class="container">
+    <header class="head">
+        <h2>LOGIN</h2>
+    </header>
+    <main>
+             <div class="regform">
+             <form id="loginform" method="GET">
+                <label> FIRST NAME</label>
+                <input type="text" id="username" placeholder="Username" required>
+                <label>LAST NAME</label>
+       <input type="text" id="password" placeholder="username" required><br><br>
+                <label>EMAIL</label>
+                <input type="text" id="email" placeholder="enter email"  required>
+                <label>PASSWORD</label>
+                <input type="password" id="password" placeholder="Password" required><br><br>
+                 <p>Don't have a account?sign in </p>
+                <button type="submit" id="submitBtn" disabled>
+                    <a href="main.html">sign in</a></button>
+                </form>
+              <script>
+                const form = document.getElementById('loginForm');
+                const username = document.getElementById('username');
+                const email=document.getElementById('email')
+                const password = document.getElementById('password');
+                const submitBtn = document.getElementById('submitBtn');
+            
+                function checkForm() {
+                  if (username.value.trim() !== '' && password.value.trim() !== '') {
+                    submitBtn.disabled = false;
+                  } else {
+                    submitBtn.disabled = true;
+                  }
+                }
+            
+                username.addEventListener('input', checkForm);
+                password.addEventListener('input', checkForm);
+                email.addEventListener('input', checkForm);
+              </script></div></main>
+</body>
+</html>

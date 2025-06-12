@@ -1,0 +1,121 @@
+body{
+    background:none;
+}
+header{
+    display:flex;
+}
+ul{
+    display:flex;
+    padding:20px 250px;
+}
+li{
+    list-style:none;
+    padding: 0px 30px;
+}
+button{
+    align-items: end;
+    padding:0p   20px;
+    height:40px;
+     width:10%;
+     border-radius:12px;
+     background-color:black;
+         padding-left:10px;
+         color:white;
+         margin:30px;
+}
+action{
+display:flex;
+padding:0px 200px;
+}
+div{
+padding:20px;
+}
+.main button{
+background-color:blue;
+color:white;
+width:20%;
+height:30px;
+border-radius:12px;
+}
+input{
+padding:10px 100px;
+text-align:left;
+border-radius:5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search button{
+width:10%;
+height:40px;
+background-color:blue;
+color:white;
+padding-left:0px;
+border-radius:0px;
+}
+img{
+width:100%;
+height:200px;;
+}
+footer{
+background-color:grey;
+color:white;
+}
+a{
+color:white;
+text-decoration:none;
+}
+.logo{
+backdrop-filter: blur(10px);
+border-radius: 3%;
+box-shadow: 0 4px 8px rgba(15, 15, 15, 0.5);
+margin:10px;
+float:right;
+} 
+.logo img{
+    height:100px;
+    width:150px;
+}
+div{
+padding:0px 10px;
+
+}
+.mnc{
+display:flex;
+}
+footer{
+    display:flex;
+padding:0px 200px;
+}
+.foot{
+    padding:20px 30px;
+    color:whitesmoke;
+}
+.foot h2{
+    color:white;
+}
+.image{
+    display:flex;
+    padding:5px;
+    flex-direction:row;
+    height:30px;
+    width:70px;
+    border-radius:20px;
+}
+.copy{
+    background-color:grey;
+    color:whitesmoke;
+}
+.copy ul{
+    display:flex;
+    padding:0px 500px;
+}
+.copy li{ 
+    list-style:none;
+    padding:0px 50px;
+}
+.copy h3{
+    padding:0px 20px;
+}
+address{
+    background-color:grey;
+    color:whitesmoke;
+}
